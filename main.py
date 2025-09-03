@@ -150,7 +150,7 @@ class TradingSystem:
     async def send_request(self, request, timeout=10):
         """Send a request and wait for response with timeout"""
         try:
-            curent_id = self.req_id
+            current_id = self.req_id
             request["req_id"] = current_id
             self.req_id += 1
 
