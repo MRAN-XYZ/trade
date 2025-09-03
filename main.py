@@ -150,7 +150,8 @@ class TradingSystem:
     async def send_request(self, request, timeout=10):
         """Send a request and wait for response with timeout"""
         try:
-            request["req_id"] = self.req_id
+            curent_id = self.req_id
+            request["req_id"] = current_id
             self.req_id += 1
 
             await self.websocket.send(json.dumps(request))
@@ -160,6 +161,7 @@ class TradingSystem:
             data = json.loads(response)
 
             if data.get("req_id") == request["req_id"]:
+                self.req_id += 1
                 return data
             else:
                 logger.warning(f"Request ID mismatch: expected {request['req_id']}, got {data.get('req_id')}")
