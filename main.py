@@ -161,7 +161,6 @@ class TradingSystem:
             data = json.loads(response)
 
             if data.get("req_id") == request["req_id"]:
-                self.req_id += 1
                 return data
             else:
                 logger.warning(f"Request ID mismatch: expected {request['req_id']}, got {data.get('req_id')}")
