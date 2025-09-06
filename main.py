@@ -18,13 +18,13 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 
 # Deriv API WebSocket URL
-WS_URL = "wss://ws.binaryws.com/websockets/v3?app_id=YOUR_APP_ID"  # Replace with your app_id
+WS_URL = "wss://ws.binaryws.com/websockets/v3?app_id=96329"  # Replace with your app_id
 
 # Your Deriv API token (get from api.deriv.com)
-API_TOKEN = "YOUR_API_TOKEN"  # Replace with your token
+API_TOKEN = "lWFYLtfTp2sbWl8"  # Replace with your token
 
 # Symbol for Jump 10 index
-SYMBOL = "JUMP10"
+SYMBOL = "JD10"
 
 # Account balance (for simulation; replace with real query via API)
 ACCOUNT_BALANCE = 10000.0
