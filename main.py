@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Technical Analysis Libraries
-import ta
+import talib as ta
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
