@@ -419,8 +419,8 @@ class DerivTradingBot:
                     self.current_price = float(data['tick']['quote'])
                     await self.process_trading_decision()
 
-    except Exception as e:
-        print(f"WebSocket error: {e}")
+        except Exception as e:
+            print(f"WebSocket error: {e}")
     
     def update_candle_data(self, candles, req_id):
         """Update candle data storage"""
