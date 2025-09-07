@@ -370,7 +370,7 @@ class DerivTradingBot:
                 # Subscribe to candles for both timeframes
                 for granularity in [900, 3600]:  # 15min and 60min in seconds
                     candle_request = {
-                        "ticks_history": "JD_10",
+                        "ticks_history": "JD10",
                         "adjust_start_time": 1,
                         "count": 200,
                         "end": "latest",
