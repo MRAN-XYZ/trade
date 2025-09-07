@@ -254,6 +254,7 @@ class DerivTradingBot:
             
             # Convert to DataFrame
             df = pd.DataFrame(list(self.price_data[timeframe]))
+            df.columns = df.columns.astype("str")
             
             # Calculate indicators
             indicators = self.calculate_technical_indicators(df)
