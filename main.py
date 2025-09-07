@@ -255,6 +255,9 @@ class DerivTradingBot:
             # Convert to DataFrame
             df = pd.DataFrame(list(self.price_data[timeframe]))
             print(df)
+            print("Column names:", df.columns.tolist())
+            print("Column types:", [type(col).__name__ for col in df.columns])
+            print("Columns dtype:", df.columns.dtype)
             df.columns = ['open', 'high', 'low', 'close', 'volume']
             df.columns = df.columns.astype("str")
             
