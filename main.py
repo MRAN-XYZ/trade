@@ -188,7 +188,7 @@ class DerivTradingBot:
                 elif 0 in self.rf_model.classes_ and 2 in self.rf_model.classes_:
                     # Has BUY (0) and HOLD (2), missing SELL (1)  
                     return np.array([proba[0], 0.0, proba[1]])
-               elif 1 in self.rf_model.classes_ and 2 in self.rf_model.classes_:
+                elif 1 in self.rf_model.classes_ and 2 in self.rf_model.classes_:
                     # Has SELL (1) and HOLD (2), missing BUY (0)
                     return np.array([0.0, proba[0], proba[1]])
                 else:
