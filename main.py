@@ -254,6 +254,8 @@ class DerivTradingBot:
             
             # Convert to DataFrame
             df = pd.DataFrame(list(self.price_data[timeframe]))
+            print(df)
+            df.columns = ['open', 'high', 'low', 'close', 'volume']
             df.columns = df.columns.astype("str")
             
             # Calculate indicators
