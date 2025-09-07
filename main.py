@@ -362,7 +362,7 @@ class DerivTradingBot:
                 
                 # Subscribe to JD10 ticks
                 subscribe_request = {
-                    "ticks": "JD_10",
+                    "ticks": "JD10",
                     "subscribe": 1
                 }
                 await websocket.send(json.dumps(subscribe_request))
