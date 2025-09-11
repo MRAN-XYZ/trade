@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 
-from main2 import DerivTradingBot  # reuse feature/indicator functions
+from main import DerivTradingBot  # reuse feature/indicator functions
 
 APP_ID = "96329"   # replace with your Deriv app_id
 TOKEN = "lWFYLtfTp2sbWl8"  # replace with your API token
